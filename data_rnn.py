@@ -43,10 +43,12 @@ def read_user_sequence(filename, n_questions, max_len=100, min_len=3, ratio=1.0)
     # import ipdb; ipdb.set_trace()
     n = int(len(his_pro) * ratio)
     return {
-        "his_pro": his_pro[:n],
+        "his_pro": his_skill[:n],
+        # "his_pro": his_pro[:n],
         "his_y": his_y[:n],
         "his_len": his_len[:n],
-        "cur_pro": cur_pro[:n],
+        "cur_pro": cur_skill[:n],
+        # "cur_pro": cur_pro[:n],
         "cur_y": cur_y[:n]
     }
 

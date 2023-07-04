@@ -1,0 +1,22 @@
+# data
+batch_size : 256
+item_num : 17738
+# model
+seed : 42
+learning_rate: 0.001
+layer_sizes  : [100, 64] # layer' s size of MLP
+att_fcn_layer_sizes : [80, 40]
+item_embedding_dim : 167
+ans_embedding_dim :  167
+init_value : 0.01
+
+# AUGRU
+hidden_size : 40
+
+# graph
+relative_threshold : 0.5
+pool_length: 70
+
+# train
+epoch: 50
+ratio: 0.01
